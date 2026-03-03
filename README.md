@@ -21,3 +21,20 @@ Uma rede neural que **bifurca e poda módulos seguindo a mesma lei matemática q
 - Whitepaper completo: [PAPER.md](PAPER.md)
 
 ## Estrutura do Projeto
+
+## 🔓 Acesso a arquivos individuais no GitHub
+
+Se você recebeu erro ao abrir subpáginas do repositório (ex.: conteúdo de arquivos individuais bloqueado no navegador), use uma destas alternativas:
+
+1. Abra o arquivo via URL `raw`:
+   - Troque `github.com/<owner>/<repo>/blob/<branch>/<arquivo>` por `raw.githubusercontent.com/<owner>/<repo>/<branch>/<arquivo>`
+2. Baixe o repositório completo (`Code` → `Download ZIP`) e abra os arquivos localmente.
+3. Clone via Git:
+
+```bash
+git clone https://github.com/<owner>/<repo>.git
+```
+
+Mensagem de referência para quem estiver com este problema:
+
+> Não consigo acessar o conteúdo dos arquivos individuais diretamente — o GitHub está bloqueando o fetch das subpáginas.
