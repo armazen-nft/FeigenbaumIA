@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Feigenbaum IA"
+authors:
+  - family-names: "Estefani"
+    given-names: "Daniel"
+  - family-names: "Solari"
+    given-names: "Melissa"
+    orcid: "https://github.com/armazen-nft"
+repository-code: "https://github.com/armazen-nft/FeigenbaumIA"
+url: "https://github.com/armazen-nft/FeigenbaumIA"
+date-released: "2026-03-02"
+version: "1.0"
