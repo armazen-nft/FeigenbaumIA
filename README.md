@@ -20,4 +20,8 @@ Uma rede neural que **bifurca e poda módulos seguindo a mesma lei matemática q
 - Memória fractal (compressão automática)
 - Whitepaper completo: [PAPER.md](PAPER.md)
 
+## Documentação
+
+- 📘 [MONOGRAFIA.md (versão revisada e fortalecida — foco em validação empírica de δ)](MONOGRAFIA.md)
+
 ## Estrutura do Projeto
