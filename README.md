@@ -21,3 +21,13 @@ Uma rede neural que **bifurca e poda módulos seguindo a mesma lei matemática q
 - Whitepaper completo: [PAPER.md](PAPER.md)
 
 ## Estrutura do Projeto
+
+## Documentação
+
+- [Monografia](MONOGRAFIA.md)
+
+## 📚 Capítulos Teóricos e Experimentais (ordem de leitura recomendada)
+
+- [Capítulo 1 — Matemática das Bifurcações](docs/chapters/01_matematica_bifurcacoes.md)
+- [Capítulo 2 — Sustentabilidade em Arquiteturas Neurais](docs/chapters/02_sustentabilidade_arquiteturas_neurais.md)
+- [Capítulo 3 — Protocolo Experimental Revisado: MNIST](docs/chapters/03_protocolo_mnist_revisado.md)
