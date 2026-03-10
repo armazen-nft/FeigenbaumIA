@@ -10,10 +10,29 @@ Rode: python experiments/phase2_demo.py
 
 from __future__ import annotations
 
+import importlib.util
 import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+
+def ensure_phase2_dependencies() -> None:
+    """Valida dependências opcionais da demo antes dos imports pesados."""
+    missing = [
+        dep
+        for dep in ("numpy", "torch")
+        if importlib.util.find_spec(dep) is None
+    ]
+    if missing:
+        deps = ", ".join(missing)
+        raise SystemExit(
+            "Dependências ausentes para phase2_demo.py: "
+            f"{deps}. Instale requirements.txt para executar o benchmark."
+        )
+
+
+ensure_phase2_dependencies()
 
 import numpy as np
 import torch
