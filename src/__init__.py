@@ -1,0 +1,1 @@
+"""FeigenbaumIA — core package"""
