@@ -21,3 +21,17 @@ Uma rede neural que **bifurca e poda módulos seguindo a mesma lei matemática q
 - Whitepaper completo: [PAPER.md](PAPER.md)
 
 ## Estrutura do Projeto
+
+Em expansão. Este repositório concentra a base conceitual e documentos da arquitetura Feigenbaum IA.
+
+## GitHub PAT (classic)
+
+Para criar um token clássico no GitHub, siga este caminho no menu:
+
+**GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)**
+
+Passos rápidos:
+1. Clique em **Generate new token (classic)**.
+2. Defina nome, expiração e escopos mínimos necessários (ex.: `repo`).
+3. Gere o token e copie na hora (ele não será exibido novamente).
+4. Armazene em local seguro (ex.: gerenciador de segredos).
