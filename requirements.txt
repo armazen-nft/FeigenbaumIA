@@ -1,2 +1,6 @@
-numpy
-torch
+numpy>=2.0
+torch>=2.4.0
+matplotlib>=3.9
+scipy>=1.13
+tqdm>=4.66
+pytest>=8.0

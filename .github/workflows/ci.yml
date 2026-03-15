@@ -1,0 +1,45 @@
+name: FeigenbaumIA CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Syntax check
+        run: |
+          python -m py_compile src/constants.py
+          python -m py_compile src/logistic.py
+          python -m py_compile src/enochian.py
+          python -m py_compile src/spawn_policy.py
+          python -m py_compile src/fractal_memory.py
+          python -m py_compile src/feigenbaum_mlp.py
+          python -m py_compile src/melissa_bridge.py
+          python -m py_compile src/poe_interface.py
+
+      - name: Run tests
+        run: pytest tests/ -v
+
+      - name: Validate Phase 1
+        run: PYTHONPATH=. python experiments/phase1_demo.py
+
+      - name: Smoke test Phase 2
+        run: |
+          PYTHONPATH=. python -c "
+from experiments.phase2_demo import run
+run(epochs=2)
+print('Phase 2 smoke test OK')
+"

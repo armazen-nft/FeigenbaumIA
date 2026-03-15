@@ -71,13 +71,16 @@ class EnochianToken:
 class EnochianEmitter:
     """Emite tokens Enochian para eventos do ciclo de vida de um módulo."""
 
-    def __init__(self, log: bool = True) -> None:
+    def __init__(self, log: bool = True, context: str = "FeigenbaumIA") -> None:
         """Inicializa emissor com flag de log."""
         self._log = log
+        self._context = context
         self._ledger: list[EnochianToken] = []
 
     def emit(self, token: EnochianToken) -> EnochianToken:
         """Armazena e opcionalmente imprime token."""
+        if not token.context:
+            token.context = self._context
         self._ledger.append(token)
         if self._log:
             print(f"  ⟐ {token.to_enochian_sequence()}")
