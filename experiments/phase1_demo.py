@@ -3,6 +3,11 @@
 
 from __future__ import annotations
 
+import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
 from src.constants import LOGISTIC_R_DEFAULT, LOGISTIC_X0_DEFAULT
 from src.logistic import logistic_sequence
 
