@@ -1,10 +1,24 @@
-# Phase: 1 | Module: Constants | Author: FeigenbaumIA-Stack
-"""Constantes globais da FeigenbaumIA."""
+"""Constantes universais — núcleo imutável do FeigenbaumIA."""
 
-from __future__ import annotations
+FEIGENBAUM_DELTA = 4.669201609102990671853203821578
+FEIGENBAUM_ALPHA = 2.502907875095892822283902873218
 
-FEIGENBAUM_DELTA: float = 4.66920160910299
-SPAWN_THRESHOLD: float = 0.72
-PRUNE_THRESHOLD: float = 0.18
-LOGISTIC_R_DEFAULT: float = 3.9
-LOGISTIC_X0_DEFAULT: float = 0.5
+R_ONSET = 3.0
+R_CHAOS = 3.56995
+R_MAX = 4.0
+
+SPAWN_THRESHOLD = 0.82
+PRUNE_THRESHOLD = 0.12
+
+FRACTAL_LEVELS = 5
+BASE_DIM = 128
+
+MELISSA_HOT_LEVELS = [0]
+MELISSA_WARM_LEVELS = [1, 2]
+MELISSA_COLD_LEVELS = [3, 4]
+
+ENOCHIAN_CONTEXT_DEFAULT = "FeigenbaumIA/PoE-Stack"
+
+# backward-compat aliases
+LOGISTIC_R_DEFAULT = 3.9
+LOGISTIC_X0_DEFAULT = 0.5
