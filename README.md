@@ -37,6 +37,8 @@ qualquer sistema dinâmico — δ ≈ 4.669.
 pip install -r requirements.txt
 python experiments/phase1_demo.py   # valida δ empiricamente
 python experiments/phase2_demo.py   # MLP com política Feigenbaum (Fase 2)
+python experiments/phase3_demo.py   # ponte FractalMemory -> Melissa/PoE (Fase 3)
+python recreate_v2.py ghp_TOKEN     # valida checklist de release local
 ```
 
 ## Roadmap
@@ -46,7 +48,7 @@ python experiments/phase2_demo.py   # MLP com política Feigenbaum (Fase 2)
 | 0 | Fundação — estrutura do repo | ✅ |
 | 1 | Protótipo matemático puro (logístico + Forest + FractalMemory) | ✅ |
 | 2 | MLP PyTorch + Enochian Token Layer | 🔄 |
-| 3 | Ponte FractalMemory ↔ MelissaCore Hot/Warm/Cold | 🔲 |
+| 3 | Ponte FractalMemory ↔ MelissaCore Hot/Warm/Cold | ✅ |
 | 4 | Benchmarks vs baseline + MANIFESTO completo | 🔲 |
 
 Ver [PAPER.md](PAPER.md), [MANIFESTO.md](MANIFESTO.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
