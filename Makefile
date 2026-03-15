@@ -4,7 +4,7 @@
 PYTHON := python
 PYTEST := pytest
 
-.PHONY: all test demo1 demo2 demo3 lint clean
+.PHONY: all test demo1 demo2 demo3 lint clean status-report
 
 all: test demo1
 
@@ -35,3 +35,8 @@ status:
 	@echo "=== FeigenbaumIA Status ==="
 	@python -c "from src.constants import FEIGENBAUM_DELTA; print(f'δ = {FEIGENBAUM_DELTA}')"
 	@echo "Tests:"; $(PYTEST) tests/ -q --no-header 2>&1 | tail -1
+
+
+status-report:
+	@echo "Relatório atual: docs/PROJECT_STATUS.md"
+	@sed -n "1,40p" docs/PROJECT_STATUS.md
